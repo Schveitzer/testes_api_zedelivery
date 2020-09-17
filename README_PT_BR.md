@@ -29,7 +29,7 @@ Para estes testes eu utilizei uma api local, ela pode ser encontrada aqui: [Simp
 - Python >= 3.6 - [Como instalar o Pytohn](https://www.python.org/downloads/)
 - Pip >= 20.0.x - [Como instalar o pip](https://pip.pypa.io/en/stable/installing/)
 - Docker >= 18.09 - [Como instalar o Docker](https://docs.docker.com/get-docker/)
-- Allure Cliente >= 2.9 [Como instalar o cliente allure](https://docs.qameta.io/allure/#_commandline)
+- Allure Cliente >= 2.9 - [Como instalar o cliente allure](https://docs.qameta.io/allure/#_commandline)
 
 
 ## iniciando
