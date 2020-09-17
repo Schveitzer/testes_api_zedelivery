@@ -1,5 +1,5 @@
-# Selenium Python Behave
-#### [Para ver o projeto em português clique aqui](https://github.com/Schveitzer/apit-tests-python-pytest/README_PT_BR.md)
+# Api tests Python Pytest
+#### [Para ver o projeto em português clique aqui](https://github.com/Schveitzer/api-tests-python-pytest/blob/master/README_PT_BR.md)
 
 In this project I demonstrate how to use Python with Pytest and Requests for automation api tests.
 
@@ -14,7 +14,7 @@ This project includes:
     - Pytest fixtures and parametrize
     - Data drive tests
     - Help functions
-    - Dafault Http client for all tests
+    - Dafault http client for all tests
     - Json Schema validation
     - Page Object Pattern
     - Report with Allure
@@ -56,26 +56,26 @@ $ pytest -vv -p no:cacheprovider --alluredir=./reports/allure_results
 ## Reports
 > You must have the allure client installed
 
-Run the command below to generate the test report in the folder `./reports/allure-report`:
+Run the command below to generate the test report:
 
 ```bash
 $ allure generate --clean ./reports/allure_results/ -o ./reports/allure-report
 ```
 
-To view the report in the browser, run the command:
+To view the report in the browser:
 
 ```bash
 $ allure open ./reports/allure-report/
 ```
 
 ## Lint Code
-To lint the code, run:
+To lint the code:
 
 ```bash
 $ pylint *
 ```
 ## Docker execution
-To start the tests with docker run:
+To start the tests with docker:
 
 ```bash
 $ export BASE_URL=http://localhost:3000/
@@ -89,7 +89,7 @@ Run the tests:
 $ make test
 ```
 
-To copy the report files to reports folder:
+To copy the report files to local reports folder:
 
 ```bash
 $ make report.get
@@ -97,7 +97,7 @@ $ make report.get
 To generate reports:
 > You must have the allure client installed
 
-Run the command below to generate the test report in the folder `./reports/allure-report`:
+Run the command below to generate the test report:
 
 ```bash
 $ allure generate --clean ./reports/allure_results/ -o ./reports/allure-report

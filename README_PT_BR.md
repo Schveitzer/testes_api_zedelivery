@@ -1,6 +1,6 @@
 # Selenium Python Behave
 
-Neste projeto eu demonstro como automatizar testes para api´s usando a linguagem Python com o Pytest e Requests
+Neste projeto demonstro como automatizar testes para api´s usando a linguagem Python com o Pytest e Requests
 
 
 
@@ -15,7 +15,7 @@ Você encontra nesse prjeto:
     - Pytest fixtures e parametrize
     - Data drive testes
     - Funções de ajuda
-    - Cliente Http padrão para todos os testes
+    - Cliente http padrão para todos os testes
     - Validação de Json Schema
     - Page Object Pattern
     - Relatório com Allure
@@ -51,33 +51,33 @@ $ export BASE_URL=http://localhost:3000/
 $ pytest -vv -p no:cacheprovider --alluredir=./reports/allure_results
 ```
 
-> No arquivo pytest.ini está configorado para que o pytest considere como um teste qualquer arquivo, classe ou função cujo nome temrine com test,
+> No arquivo pytest.ini está configorado para que o pytest considere como um teste qualquer arquivo, classe ou função cujo nome temrine com 'test',
 >para alterar isto delete o arquivo pystest.ini ou edite o seu conteúdo.
  
 ## Relatórios
 > Você deve ter o allure client instalado.
 
-Execute o comando abaixo para gerar o relatório na pasta: `./reports/allure-report`:
+Execute o comando abaixo para gerar o relatório:
 
 ```bash
 $ allure generate --clean ./reports/allure_results/ -o ./reports/allure-report
 ```
 
-Para visualizar o relatório no seu navegador, execute o comando:
+Para visualizar o relatório no seu navegador:
 
 ```bash
 $ allure open ./reports/allure-report/
 ```
 
 ## Lint do código
-Para fazer o lint do código execute:
+Para fazer o lint do código:
 
 ```bash
 $ pylint *
 ```
-## Execução com  DOcker
+## Execução com  Docker
 
-Para executar os testes com docker execute o comando:
+Para executar os testes com docker:
 
 ```bash
 $ export BASE_URL=http://localhost:3000/
@@ -91,7 +91,7 @@ Execute os testes:
 $ make test
 ```
 
-Para copiar os arquivos do relatório que foram gerados para a pasta reports, execute:
+Para copiar os arquivos do relatório que foram gerados para a pasta local reports:
 
 ```bash
 $ make report.get
@@ -100,13 +100,13 @@ Para gerar o relatório:
 
 > Você deve ter o allure client instalado.
 
-Execute o comando abaixo para gerar o relatório na pasta: `./reports/allure-report`:
+Execute o comando abaixo para gerar o relatório:
 
 ```bash
 $ allure generate --clean ./reports/allure_results/ -o ./reports/allure-report
 ```
 
-Para visualizar o relatório no seu navegador, execute o comando:
+Para visualizar o relatório no seu navegador:
 
 ```bash
 $ allure open ./reports/allure-report/
