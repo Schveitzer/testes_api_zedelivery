@@ -6,7 +6,7 @@ from helpers.object_helper import ObjectHelper
 from helpers.validate_json_schema import validate_json
 
 
-@allure.suite('Validações no endpoint de Usuários')
+@allure.suite('Validations on Users endpoint')
 class UsersTests:
 
     TEST_DATA_IDS_NAMES = read_test_data_from_json_tuple('users_ids_names_gender.json')
@@ -22,7 +22,7 @@ class UsersTests:
         self.url = str(self.base_url + self.endpoint)
         self.keys_to_remove = ['id']
 
-    @allure.title('Valida get para o usuário com id 1')
+    @allure.title('Validates get to user with id 1')
     @allure.severity(allure.severity_level.NORMAL)
     def get_user_test(self):
         user_id = '1'
@@ -36,7 +36,7 @@ class UsersTests:
     # Parameterized test that validates the name, age and gender for ids contained in the
     # users_ids_names_gender.json
     @pytest.mark.parametrize("user_id, expected_name, expected_gender", TEST_DATA_IDS_NAMES)
-    @allure.title('Valida informações do get no endpoint users com os dados:')
+    @allure.title('Validates get information on endpoint "users" with data:')
     @allure.severity(allure.severity_level.CRITICAL)
     def get_users_test(self, user_id, expected_name, expected_gender):
         response = self.client.get(self.url + user_id)
@@ -46,7 +46,7 @@ class UsersTests:
         assert response_body["name"] == expected_name
         assert response_body["gender"] == expected_gender
 
-    @allure.title('Valida o schema do json para get no endpoint users')
+    @allure.title('Validates the json schema to get no endpoint "users"')
     @allure.severity(allure.severity_level.NORMAL)
     def get_user_schema_validation_test(self):
         user_id = '1'
@@ -57,7 +57,7 @@ class UsersTests:
         assert response.status_code == HTTPStatus.OK
         assert validate_json(response_body, schema)
 
-    @allure.title('Valida informações do get no edpoint users com o filtro: page=1 limit=2')
+    @allure.title('Validates get information on edpoint "users" with the filter: page=1 limit=2')
     @allure.severity(allure.severity_level.NORMAL)
     def get_user_with_filter_test(self):
         filter_data = '?_page=1&_limit=2'
@@ -68,7 +68,7 @@ class UsersTests:
         assert response.status_code == HTTPStatus.OK
         assert response_body == file_to_compare
 
-    @allure.title('Valida cadastro de um usuário com post no edpoint')
+    @allure.title("Validates a user's registration with post")
     @allure.severity(allure.severity_level.NORMAL)
     def post_new_user(self):
         file_to_post = read_test_data_from_json('user_3.json')

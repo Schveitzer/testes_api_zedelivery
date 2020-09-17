@@ -15,7 +15,7 @@ Você encontra nesse prjeto:
     - Pytest fixtures e parametrize
     - Data drive testes
     - Funções de ajuda
-    - Cliente http padrão para todos os testes
+    - Cliente Http padrão para todos os testes
     - Validação de Json Schema
     - Page Object Pattern
     - Relatório com Allure

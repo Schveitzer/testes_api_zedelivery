@@ -14,7 +14,7 @@ This project includes:
     - Pytest fixtures and parametrize
     - Data drive tests
     - Help functions
-    - Dafault http client for all tests
+    - Dafault Http client for all tests
     - Json Schema validation
     - Page Object Pattern
     - Report with Allure

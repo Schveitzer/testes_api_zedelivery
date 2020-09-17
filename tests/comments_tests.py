@@ -4,7 +4,7 @@ import pytest
 from helpers.object_helper import ObjectHelper
 
 
-@allure.suite('Validações no endpoint de Comentários')
+@allure.suite('Validations on Comments endpoint')
 class CommentsTests:
 
     # Fixture that configures standard requests using the client() function and baseUrl in the conftest.py
@@ -18,7 +18,7 @@ class CommentsTests:
         self.url = str(self.base_url + self.endpoint)
         self.keys_to_remove = ['id']
 
-    @allure.title('Valida get para o comentário com id 1')
+    @allure.title('Validates get to comment with id 1')
     @allure.severity(allure.severity_level.NORMAL)
     def get_comment_test(self):
         comment_id = '1'
@@ -32,7 +32,7 @@ class CommentsTests:
             'id': 1,
         }
 
-    @allure.title('Valida cadastro de um novo comentário usando post')
+    @allure.title('Validates registration of a new comment using post')
     @allure.severity(allure.severity_level.NORMAL)
     def post_comment_test(self):
         data = {
@@ -49,7 +49,7 @@ class CommentsTests:
 
         assert response_body == {'body': 'Brilliant', 'articleId': '1'}
 
-    @allure.title('Valida atualização de um comentário usando patch')
+    @allure.title('Validates update of a comment using patch')
     @allure.severity(allure.severity_level.NORMAL)
     def patch_comment_test(self):
         comment_id = '10'
@@ -64,7 +64,7 @@ class CommentsTests:
             'articleId': 1,
         }
 
-    @allure.title('Valida deleção de um comentário usando delete')
+    @allure.title('Validates deletion of a comment using delete')
     @allure.severity(allure.severity_level.NORMAL)
     def delete_comment_test(self):
         data = {
