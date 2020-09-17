@@ -1,4 +1,4 @@
-# Selenium Python Behave
+# Testes de Api com Python e Pytest
 
 Neste projeto demonstro como automatizar testes para api´s usando a linguagem Python com o Pytest e Requests
 
