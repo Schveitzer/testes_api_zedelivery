@@ -28,7 +28,7 @@ For this tests i use a local api which can be found here: [Simple jwt local api]
 - Python >= 3.6 - [How install Pytohn](https://www.python.org/downloads/)
 - Pip >= 20.0.x - [How install pip](https://pip.pypa.io/en/stable/installing/)
 - Docker >= 18.09 - [How install Docker](https://docs.docker.com/get-docker/)
-- Allure Cliente >= 2.9 [how install allure client](https://docs.qameta.io/allure/#_commandline)
+- Allure Cliente >= 2.9 [How install allure client](https://docs.qameta.io/allure/#_commandline)
 
 ## Getting Started
 Install dependencies:
