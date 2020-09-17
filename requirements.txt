@@ -1,0 +1,7 @@
+allure-pytest==2.8.18
+allure-python-commons==2.8.18
+jsonschema==3.2.0
+pylint==2.6.0
+pytest==6.0.2
+pytest-metadata==1.10.0
+requests==2.24.0

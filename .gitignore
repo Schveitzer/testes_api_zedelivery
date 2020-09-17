@@ -1,0 +1,9 @@
+.pyc
+*.pyc
+.DS_STORE
+*.DS_STORE
+.idea
+reports
+venv
+.pytest_cache
+__pycache__

@@ -1,0 +1,18 @@
+[MASTER]
+disable=
+    C0114, # missing-module-docstring
+    C0115, # missing-class-docstring
+    C0116, # missing-function-docstring
+    W0201, # attribute-defined-outside-init
+
+ignore=
+    requirements.txt,
+    pytest.ini,
+    README.md,
+    Dockerfile,
+    Makefile,
+    reports,
+    venv
+
+[FORMAT]
+max-line-length=110
