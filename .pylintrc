@@ -4,6 +4,7 @@ disable=
     C0115, # missing-class-docstring
     C0116, # missing-function-docstring
     W0201, # attribute-defined-outside-init
+    R0801,
 
 ignore=
     requirements.txt,
@@ -12,7 +13,8 @@ ignore=
     Dockerfile,
     Makefile,
     reports,
-    venv
+    venv,
+    LICENSE
 
 [FORMAT]
-max-line-length=110
+max-line-length=300
