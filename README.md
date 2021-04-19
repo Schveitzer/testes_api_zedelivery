@@ -2,6 +2,13 @@
 
 Neste projeto são feitas automações de testes para a api pública OpenWeather
 
+A escolha da linguagem Pytohn para a elaboração e execução do testes se deu por alguns motivos sendo eles:
+- Python é uma linguagem de Script, linguagens de scripts dão um entendimento implícito de execução em uma determinada ordem.
+- Python é uma linguagem com sintaxe simples e com uma curva de aprendizado baixa, porém que dá um grande poder para desenvolvimento.
+- Scripts em Python quando bem escritos tendem a facilitar muito a manutenção do código.
+- Na linguagem Python temos dois excelentes frameworks que são o Requests para requisição e o Pytest para os testes, ambos contam com recursos poderosos abrem um grande leque de opções e configurações para os testes.
+- Vasta documentação e exemplos tanto da linguagem quanto do frameworks usados.
+
 Você encontra nesse projeto:
 
 - Framworks:
