@@ -2,12 +2,12 @@
 
 Neste projeto são feitas automações de testes para a api pública OpenWeather
 
-A escolha da linguagem Pytohn para a elaboração e execução do testes se deu por alguns motivos sendo eles:
-- Python é uma linguagem de Script, linguagens de scripts dão um entendimento implícito de execução em uma determinada ordem.
+A escolha da linguagem Python para a elaboração e execução do testes se deu por alguns motivos sendo eles:
+- Python é uma linguagem de Script, linguagens de scripts dão um entendimento implícito de execução em uma determinada ordem o que deixa os testes mais organizados.
 - Python é uma linguagem com sintaxe simples e com uma curva de aprendizado baixa, porém que dá um grande poder para desenvolvimento.
 - Scripts em Python quando bem escritos tendem a facilitar muito a manutenção do código.
-- Na linguagem Python temos dois excelentes frameworks que são o Requests para requisição e o Pytest para os testes, ambos contam com recursos poderosos abrem um grande leque de opções e configurações para os testes.
-- Vasta documentação e exemplos tanto da linguagem quanto do frameworks usados.
+- Na linguagem Python temos dois excelentes frameworks que são o Requests para as requisições e o Pytest para os testes, ambos contam com recursos poderosos que abrem um grande leque de opções e configurações para os testes.
+- Vasta documentação e exemplos tanto da linguagem quanto dos frameworks usados.
 
 Você encontra nesse projeto:
 
@@ -49,7 +49,7 @@ $ export APPID=<SUA_CHAVE_AQUI>
 $ pytest -vv -p no:cacheprovider --alluredir=./reports/allure_results
 ```
 
-> No arquivo pytest.ini está configorado para que o pytest considere como um teste qualquer arquivo, classe ou função cujo nome termine com 'test',
+> O arquivo pytest.ini está configurado para que o pytest considere como um teste qualquer arquivo, classe ou função cujo nome termine com 'test',
 >para alterar isto delete o arquivo pystest.ini ou edite o seu conteúdo.
  
 ## Relatórios
