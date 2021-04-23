@@ -16,10 +16,10 @@ Você encontra nesse projeto:
     - Requests
 
 - Features:
-    - Pytest fixtures e parametrize
+    - Pytest fixtures
     - Data drive testes
     - Funções de ajuda
-    - teste de contrato com Json Schema
+    - Teste de contrato com Json Schema
     - Relatório com Allure
     - Lint de código com Pylint
     
