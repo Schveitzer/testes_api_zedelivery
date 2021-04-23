@@ -10,6 +10,7 @@ from helpers.validate_json_schema import validate_json
 @allure.suite('Validações nos endpoints box da api pública openweathermap ')
 class BoxTests:
 
+    # A implementação dos métodos get_base_url, get_appid que são passados como fixtures podem ser vistas e editadas no arquivo conftest.py na raiz do projeto.
     @pytest.fixture(autouse=True)
     def setup(self, get_base_url, get_appid):
         self.base_url = get_base_url
